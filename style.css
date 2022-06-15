@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(0, 0%, 95%);
+}
+
+nav{
+    background-color: #00403f;
+    padding: 20px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+}
+
+.active{
+    border-radius: 20px;
+    background-color: #e28525;
+}
+
+.main{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+h3{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+p {
+    padding-top: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.first-content{
+    background-color: hsl(31, 77%, 52%);
+    padding: 40px;
+    height: 70%;
+}
+
+.first-content h3{
+    color: hsl(0, 0%, 95%);
+}
+
+.second-content{
+    background-color: hsl(184, 100%, 22%);
+    padding: 40px;
+    height: 70%;
+}
+
+.second-content h3{
+    color: hsl(0, 0%, 95%);
+}
+
+.third-content{
+    background-color: hsl(179, 100%, 13%);
+    padding: 40px;
+    height: 70%;
+}
+
+.third-content h3{
+    color: hsl(0, 0%, 95%);
+}
+
+.first-content p{
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.second-content p{
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.third-content p{
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+button{
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    position: absolute;
+    top: 70%;
+}
+
+.btn-1 a{
+    color: #e28525;
+    text-decoration: none;
+}
+.btn-2 a{
+    color: #016972;
+    text-decoration: none;
+}
+.btn-3 a{
+    color: #00403f;
+    text-decoration: none;
+}
+
+.btn-1:hover{
+    border: 2px white solid;
+    background-color: #e28525;
+}
+
+.btn-2:hover{
+    border: 2px white solid;
+    background-color: #016972;
+}
+
+.btn-3:hover{
+    border: 2px white solid;
+    background-color: #00403f;
+}
+
+.btn-1:hover a{
+    color: white;
+}
+
+.btn-2:hover a{
+    color: white;
+}
+
+.btn-3:hover a{
+    color: white;
+}
+
+@media screen and (max-width: 700px) {
+    .main{
+        width: 70%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+
+    button{
+        padding: 10px;
+        border: none;
+        border-radius: 20px;
+        position: relative;
+        top: 20%;
+    }
+
+    .first-content{
+        padding: 30px;
+        height: 60%;
+    }
+
+    .second-content{
+        padding: 30px;
+        height: 60%;
+    }
+
+    .third-content{
+        padding: 30px;
+        height: 60%;
+    }
+}

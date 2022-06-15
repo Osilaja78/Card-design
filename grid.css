@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(0, 0%, 95%);
+}
+
+nav{
+    background-color: #00403f;
+    padding: 20px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px; 
+}
+
+.active{
+    border-radius: 20px;
+    background-color: #e28525;
+}
+
+.main{
+    width: 60%;
+    margin: auto;
+    display: grid;
+    grid-template-areas: 
+    'a b c'
+    ;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+h3{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+p {
+    padding-top: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.item-a{
+    grid-area: a;
+    background-color: hsl(31, 77%, 52%);
+    padding: 40px;
+    height: 70%;
+    max-height: 80%;
+}
+
+.item-b{
+    grid-area: b;
+    background-color: hsl(184, 100%, 22%);
+    padding: 40px;
+    height: 70%;
+}
+
+.item-c{
+    grid-area: c;
+    background-color: hsl(179, 100%, 13%);
+    padding: 40px;
+    height: 70%;
+}
+
+.item-a h3{
+    color: hsl(0, 0%, 95%);
+}
+
+.item-b h3{
+    color: hsl(0, 0%, 95%);
+}
+
+.item-c h3{
+    color: hsl(0, 0%, 95%);
+}
+
+.item-a p{
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.item-b p{
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.item-c p{
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+button{
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    position: absolute;
+    top: 75%;
+}
+
+.btn-1 a{
+    color: #e28525;
+    text-decoration: none;
+}
+.btn-2 a{
+    color: #016972;
+    text-decoration: none;
+}
+.btn-3 a{
+    color: #00403f;
+    text-decoration: none;
+}
+
+.btn-1:hover{
+    border: 2px white solid;
+    background-color: #e28525;
+    color: hsl(0, 0%, 95%);
+}
+
+.btn-2:hover{
+    border: 2px white solid;
+    background-color: #016972;
+    color: white;
+}
+
+.btn-3:hover{
+    border: 2px white solid;
+    background-color: #00403f;
+    color: white;
+}
+
+.btn-1:hover a{
+    color: white;
+}
+
+.btn-2:hover a{
+    color: white;
+}
+
+.btn-3:hover a{
+    color: white;
+}
+
+@media screen and (max-width: 700px) {
+    .main{
+        width: 70%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+
+    button{
+        padding: 10px;
+        border: none;
+        border-radius: 20px;
+        position: relative;
+        top: 20%;
+    }
+
+    .item-a{
+        padding: 30px;
+        height: 60%;
+    }
+
+    .item-b{
+        padding: 30px;
+        height: 60%;
+    }
+
+    .item-c{
+        padding: 30px;
+        height: 60%;
+    }
+}
