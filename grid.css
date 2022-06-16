@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #0c2928;
+    background-color: #103534;
 }
 
 nav{
@@ -20,7 +20,7 @@ nav a{
     padding: 10px; 
 }
 
-.active{
+#active{
     border-radius: 20px;
     background-color: #e28525;
 }
